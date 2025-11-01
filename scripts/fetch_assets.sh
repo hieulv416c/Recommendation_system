@@ -5,17 +5,17 @@ echo "🚀 Downloading assets from Google Drive..."
 mkdir -p data/compatibility data/similarity models
 
 # === COMPATIBILITY (feature 2) ===
-gdown --id <ID_FAISS_FEATURE2>   -O data/compatibility/faiss_index_feature2.index
-gdown --id <ID_IDMAP_FEATURE2>   -O data/compatibility/id_map_feature2.json
-gdown --id <ID_VECTORS_FEATURE2> -O data/compatibility/vectors_feature2.npy
+gdown --id 10k4RLaQyk-jyBuY1mO5TvodxhVDZYNxJ -O data/compatibility/faiss_index_feature2.index
+gdown --id 1wIprp97KZuuoEqy0-OvURlNJlBivJt8p -O data/compatibility/id_map_feature2.json
+gdown --id 1HEQJm6fLLNVRzU-q8sCSm93eLxUMYft_ -O data/compatibility/vectors_feature2.npy
 
 # === SIMILARITY (feature 1) ===
-gdown --id <ID_FAISS_INDEX>  -O data/similarity/faiss_index.index
-gdown --id <ID_IDMAP>        -O data/similarity/id_map.json
-gdown --id <ID_VECTORS>      -O data/similarity/vectors.npy
+gdown --id 1cBEZ9bOI-Oy2ZYrMifr8qoQ-SPQ3Z9iT -O data/similarity/faiss_index.index
+gdown --id 1w18ofY2DFNwuH67283nsuTSJjrDEHQTK -O data/similarity/id_map.json
+gdown --id 1YegwxOcMAYt2U_u5XjX5lkoMcMXafVpo -O data/similarity/vectors.npy
 
 # === META + MODEL ===
-gdown --id <ID_METADATA> -O data/items_metadata_joined_fixed.json
-gdown --id <ID_MODEL>    -O models/resnet50_proj512_best.pt
+gdown --id 1QueQKqMLP-ERhAiOtLiCAnbFAizSCgnQ -O data/items_metadata_joined_fixed.json
+gdown --id 1eU-dFEwpiBRGOWwAK0eMhayJC-c2jynG -O models/resnet50_proj512_best.pt
 
 echo "✅ All assets downloaded successfully."
